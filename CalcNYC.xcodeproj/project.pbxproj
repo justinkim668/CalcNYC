@@ -15,6 +15,12 @@
 		1E0712A21F4FCF9D0020F927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0712A01F4FCF9D0020F927 /* LaunchScreen.storyboard */; };
 		1E0712AD1F4FCF9D0020F927 /* CalcNYCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712AC1F4FCF9D0020F927 /* CalcNYCTests.swift */; };
 		1E0712B81F4FCF9D0020F927 /* CalcNYCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712B71F4FCF9D0020F927 /* CalcNYCUITests.swift */; };
+		1E0712C61F4FCFE90020F927 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712C51F4FCFE90020F927 /* InfoViewController.swift */; };
+		1E0712C81F50A94B0020F927 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712C71F50A94B0020F927 /* MainTabBarController.swift */; };
+		1E0712CA1F50AD5D0020F927 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712C91F50AD5D0020F927 /* ExpensesViewController.swift */; };
+		1E0712CC1F50AE030020F927 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712CB1F50AE030020F927 /* Cell.swift */; };
+		1E0712D01F50C03F0020F927 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712CF1F50C03F0020F927 /* CoreDataHelper.swift */; };
+		1E0712EE1F51284D0020F927 /* Date->String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0712ED1F51284D0020F927 /* Date->String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		1E0712B31F4FCF9D0020F927 /* CalcNYCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcNYCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0712B71F4FCF9D0020F927 /* CalcNYCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcNYCUITests.swift; sourceTree = "<group>"; };
 		1E0712B91F4FCF9D0020F927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E0712C51F4FCFE90020F927 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1E0712C71F50A94B0020F927 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1E0712C91F50AD5D0020F927 /* ExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		1E0712CB1F50AE030020F927 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		1E0712CF1F50C03F0020F927 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		1E0712ED1F51284D0020F927 /* Date->String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date->String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		1E0712881F4FCF9D0020F927 = {
 			isa = PBXGroup;
 			children = (
+				1E07129B1F4FCF9D0020F927 /* CalcNYC.xcdatamodeld */,
 				1E0712931F4FCF9D0020F927 /* CalcNYC */,
 				1E0712AB1F4FCF9D0020F927 /* CalcNYCTests */,
 				1E0712B61F4FCF9D0020F927 /* CalcNYCUITests */,
@@ -100,12 +113,16 @@
 			isa = PBXGroup;
 			children = (
 				1E0712941F4FCF9D0020F927 /* AppDelegate.swift */,
-				1E0712961F4FCF9D0020F927 /* ViewController.swift */,
-				1E0712981F4FCF9D0020F927 /* Main.storyboard */,
+				1E0712C71F50A94B0020F927 /* MainTabBarController.swift */,
+				1E0712DB1F50D2520020F927 /* Models */,
+				1E0712DC1F50D2730020F927 /* Sales Tax Calculator */,
+				1E0712D91F50D22F0020F927 /* StoryBoards */,
 				1E07129E1F4FCF9D0020F927 /* Assets.xcassets */,
-				1E0712A01F4FCF9D0020F927 /* LaunchScreen.storyboard */,
 				1E0712A31F4FCF9D0020F927 /* Info.plist */,
-				1E07129B1F4FCF9D0020F927 /* CalcNYC.xcdatamodeld */,
+				1E0712CB1F50AE030020F927 /* Cell.swift */,
+				1E0712C91F50AD5D0020F927 /* ExpensesViewController.swift */,
+				1E0712CF1F50C03F0020F927 /* CoreDataHelper.swift */,
+				1E0712ED1F51284D0020F927 /* Date->String.swift */,
 			);
 			path = CalcNYC;
 			sourceTree = "<group>";
@@ -126,6 +143,31 @@
 				1E0712B91F4FCF9D0020F927 /* Info.plist */,
 			);
 			path = CalcNYCUITests;
+			sourceTree = "<group>";
+		};
+		1E0712D91F50D22F0020F927 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1E0712981F4FCF9D0020F927 /* Main.storyboard */,
+				1E0712A01F4FCF9D0020F927 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		1E0712DB1F50D2520020F927 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1E0712DC1F50D2730020F927 /* Sales Tax Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				1E0712961F4FCF9D0020F927 /* ViewController.swift */,
+				1E0712C51F4FCFE90020F927 /* InfoViewController.swift */,
+			);
+			name = "Sales Tax Calculator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +238,7 @@
 				TargetAttributes = {
 					1E0712901F4FCF9D0020F927 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9C9DFKJ6LM;
+						DevelopmentTeam = S9EVLTX79C;
 						ProvisioningStyle = Automatic;
 					};
 					1E0712A71F4FCF9D0020F927 = {
@@ -267,7 +309,13 @@
 			files = (
 				1E07129D1F4FCF9D0020F927 /* CalcNYC.xcdatamodeld in Sources */,
 				1E0712971F4FCF9D0020F927 /* ViewController.swift in Sources */,
+				1E0712CC1F50AE030020F927 /* Cell.swift in Sources */,
+				1E0712C81F50A94B0020F927 /* MainTabBarController.swift in Sources */,
+				1E0712C61F4FCFE90020F927 /* InfoViewController.swift in Sources */,
+				1E0712D01F50C03F0020F927 /* CoreDataHelper.swift in Sources */,
 				1E0712951F4FCF9D0020F927 /* AppDelegate.swift in Sources */,
+				1E0712CA1F50AD5D0020F927 /* ExpensesViewController.swift in Sources */,
+				1E0712EE1F51284D0020F927 /* Date->String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,26 +468,34 @@
 		1E0712BD1F4FCF9D0020F927 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9C9DFKJ6LM;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S9EVLTX79C;
 				INFOPLIST_FILE = CalcNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Justin.CalcNYC.CalcNYC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jkim.CalcNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1E0712BE1F4FCF9D0020F927 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9C9DFKJ6LM;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S9EVLTX79C;
 				INFOPLIST_FILE = CalcNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Justin.CalcNYC.CalcNYC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jkim.CalcNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -520,6 +576,7 @@
 				1E0712BE1F4FCF9D0020F927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E0712BF1F4FCF9D0020F927 /* Build configuration list for PBXNativeTarget "CalcNYCTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +585,7 @@
 				1E0712C11F4FCF9D0020F927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E0712C21F4FCF9D0020F927 /* Build configuration list for PBXNativeTarget "CalcNYCUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +594,7 @@
 				1E0712C41F4FCF9D0020F927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -546,7 +605,8 @@
 				1E07129C1F4FCF9D0020F927 /* CalcNYC.xcdatamodel */,
 			);
 			currentVersion = 1E07129C1F4FCF9D0020F927 /* CalcNYC.xcdatamodel */;
-			path = CalcNYC.xcdatamodeld;
+			name = CalcNYC.xcdatamodeld;
+			path = CalcNYC/CalcNYC.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
